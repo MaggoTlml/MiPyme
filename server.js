@@ -35,7 +35,7 @@ db.mongoose
 
 // ruta simple
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to bezkoder application." });
+  res.json({ message: "Bienvenido a MiPyme" });
 });
 
 // routes
