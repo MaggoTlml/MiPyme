@@ -5,8 +5,12 @@ const cors = require("cors");
 const app = express();
 
 var corsOptions = {
-  origin: "http://localhost:8081"
+  origin: "http://192.168.1.189:4200"
 };
+
+app.listen(80, '192.168.1.189', function() {
+  console.log('Listening to port:  ' + 80);
+});
 
 app.use(cors(corsOptions));
 
